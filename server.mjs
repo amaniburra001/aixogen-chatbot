@@ -7,9 +7,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: ["http://localhost:5500", "https://www.aixogen.com"],
-  methods: ["GET", "POST"],
-  allowedHeaders: ["Content-Type"]
+  origin: "*"
 }));
 app.use(express.json());
 
