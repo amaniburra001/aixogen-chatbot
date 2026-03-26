@@ -52,10 +52,9 @@ Professional, helpful, business-focused.
 
   } catch (error) {
     console.error(error);
-    res.status(500).send("Error");
-  }
+    res.status(500).json({
+  reply: "Sorry, something went wrong. Please try again."
 });
-
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
